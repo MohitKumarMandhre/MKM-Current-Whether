@@ -1,3 +1,86 @@
+# MKM-Current-Whether
+
+- ## MKM-Current-Whether checks the weather around you and all over the world at a glance. Rely on the accurate weather forecast and adjust your schedule to the weather coming in.
+
+## API USED
+
+- Weather APIs are Application Programming Interfaces that allow you to connect to large databases of weather forecast and historical information.
+
+- https://openweathermap.org/api 
+
+- ### API CALL ( Call current weather data for one location By city name )
+
+- #### api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+- ### API IN JSON FORMAT EXAMPLE ( RAW FORM )
+
+- {
+"coord": {
+"lon": 72.8479,
+"lat": 19.0144
+},
+"weather": [
+{
+"id": 711,
+"main": "Smoke",
+"description": "smoke",
+"icon": "50d"
+}
+],
+"base": "stations",
+"main": {
+"temp": 304.15,
+"feels_like": 304.72,
+"temp_min": 304.15,
+"temp_max": 304.15,
+"pressure": 1009,
+"humidity": 48
+},
+"visibility": 3500,
+"wind": {
+"speed": 3.6,
+"deg": 290
+},
+"clouds": {
+"all": 40
+},
+"dt": 1616224744,
+"sys": {
+"type": 1,
+"id": 9052,
+"country": "IN",
+"sunrise": 1616202768,
+"sunset": 1616246364
+},
+"timezone": 19800,
+"id": 1275339,
+"name": "Mumbai",
+"cod": 200
+}
+
+- ### USED MAIN PART 
+
+- "main": {
+"temp": 304.15,
+"feels_like": 304.72,
+"temp_min": 304.15,
+"temp_max": 304.15,
+"pressure": 1009,
+"humidity": 48
+},
+
+
+- ### package.json File
+
+- #### https://github.com/MohitKumarMandhre/MKM-Current-Whether/blob/main/PICS/p1.PNG
+
+- #### ![alt text](https://github.com/MohitKumarMandhre/MKM-Current-Whether/blob/main/PICS/p1.PNG)
+
+- ### Galary 
+
+- ![alt text](https://github.com/MohitKumarMandhre/MKM-Current-Whether/blob/main/PICS/whether-V-G.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
